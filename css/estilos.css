@@ -12,6 +12,109 @@
     font-family: sans-serif;
     background: linear-gradient(#141e30, #243b55);
   }
+
+  .content .leftcontent {
+    float: left;
+    width: 50%;
+    display: inline-block;
+  }
+  
+  .content .leftcontent .innerblock {
+    float: right;
+  }
+  
+  .content .leftcontent .bloghighlight {
+    max-width: 550px;
+    margin: 0px auto;
+  }
+  
+  .content .leftcontent .bloghighlight article {
+    margin-top: 25px;
+  }
+  
+  .content .leftcontent .bloghighlight h4 {
+    text-align: center;
+    font-size: 19px;
+    margin: 0;
+  }
+  
+  .content .leftcontent .bloghighlight .article-title h3 {
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0px;
+  }
+  
+  .content .leftcontent .bloghighlight .article-details h3.date {
+    font-size: 12px;
+    color: var(--lighttext);
+    font-height: 14px;
+    margin: 0px;
+  }
+  
+  .content .leftcontent .bloghighlight .article-summary {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+  
+  .content .leftcontent .bloghighlight .article-summary a.readmore {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--pink);
+    font-weight: 700;
+    float: right;
+    display: block;
+    padding: 3px 10px;
+    margin-bottom: 25px;
+  }
+  
+  .content .rightcontent {
+    float: left;
+    width: 50%;
+    display: inline-block;
+  }
+  
+  .content .rightcontent .innerblock {
+    float: left;
+  }
+  
+  .content .rightcontent ul {
+    margin-top: 25px;
+  }
+  
+  .content .rightcontent ul li {
+    list-style-type: none;
+    color: var(--dark);
+    padding-top: 15px;
+  }
+  
+  .content .rightcontent ul li a {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--pink);
+    word-wrap: break-word;
+  }
+  
+  .content .rightcontent .highlight {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  
+  .content .rightcontent .highlight img {
+    width: 225px;
+    height: 225px;
+  }
+  
+  .content .rightcontent .highlight h2 {
+    text-align: center;
+    font-size: 19px;
+    margin: 0;
+  }
+  
+  .content .rightcontent .highlight ul.portfolio-images li {
+    display: inline-block;
+    padding: 0;
+  }
   
   .login-box {
     position: absolute;
@@ -32,6 +135,351 @@
     color: #fff;
     text-align: center;
   }
+  /* Variables */
+:root {
+  --dark: #2c343b;
+  --pink: #E65B53;
+  --light: #FFFCE2;
+  --tan: #FFE4B6;
+  --text: #222222;
+  --lighttext: #4F4F4F;
+  --purple: #8B5FBF;
+  --teal: #5AC6AC;
+  --mauve: #9C768D;
+  --peach: #FFCBA4;
+  --mint: #B0E0E6;
+  --lavender: #E6E6FA;
+  --blush: #FFC0CB;
+  --olive: #808000;
+  --coral: #FF7F50;
+  --indigo: #4B0082;
+  --mustard: #FFDB58;
+  --taupe: #483C32;
+  --rose: #FFCCCC;
+  --slate: #708090;
+  --maroon: #800000;
+  --gold: #FFD700;
+  --skyblue: #87CEEB;
+  --dustyrose: #D8B2D1;
+  --periwinkle: #CCCCFF;
+  --olivegreen: #556B2F;
+  --salmon: #FA8072;
+  --navy: #000080;
+  --sand: #ECD9C6;
+  --peacock: #33A1C9;
+  --copper: #B87333;
+  --lilac: #C8A2C8;
+  --brass: #B5A642;
+  --turquoise: #40E0D0;
+  --chestnut: #CD5C5C;
+  --steelblue: #4682B4;
+  --sienna: #A0522D;
+  --periwinkle: #CCCCFF;
+  --emerald: #50C878;
+  --ruby: #E0115F;
+  --plum: #8E4585;
+  --ochre: #CC7722;
+  --aqua: #00FFFF;
+  --crimson: #DC143C;
+  --steel: #4682B4;
+  --bronze: #CD7F32;
+}
+
+/* Selecciones */
+::selection {
+  background: var( --lighttext);
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background: var(--tan);
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--tan);
+  color: #FFF;
+  text-shadow: none;
+}
+
+/* Estilos generales */
+body {
+  background-color: var(--lighttext);
+  margin: 7px;
+  border: 2px solid #FFF;
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  background-color: #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+nav ul {
+  background-color: #FFF;
+  padding: 0px;
+  display: inline-block;
+  margin: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
+  display: block;
+  padding: 15px 40px;
+}
+
+nav ul li a:hover {
+  background-color: #D9D6C0;
+  color: var(--dark);
+}
+
+.hero {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.hero h2 {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.hero p {
+  color: var(--light);
+}
+
+.hero p span.highlight {
+  color: var(--pink);
+}
+
+.hero p a {
+  color: var(--pink);
+}
+
+.content {
+  float: left;
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 45px 0px;
+  background-color: #FFF;
+}
+
+.content .leftcontent {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+
+.content .leftcontent .innerblock {
+  float: right;
+}
+
+.content .leftcontent .bloghighlight {
+  max-width: 550px;
+  margin: 0px auto;
+}
+
+.content .leftcontent .bloghighlight article {
+  margin-top: 25px;
+}
+
+.content .leftcontent .bloghighlight h4 {
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+}
+
+.content .leftcontent .bloghighlight .article-title h3 {
+  color: var(--dark);
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0px;
+}
+
+.content .leftcontent .bloghighlight .article-details h3.date {
+  font-size: 12px;
+  color: var(--lighttext);
+  font-height: 14px;
+  margin: 0px;
+}
+
+.content .leftcontent .bloghighlight .article-summary {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.content .leftcontent .bloghighlight .article-summary a.readmore {
+  text-decoration: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: var(--pink);
+  font-weight: 700;
+  float: right;
+  display: block;
+  padding: 3px 10px;
+  margin-bottom: 25px;
+}
+
+.content .rightcontent {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+
+.content .rightcontent .innerblock {
+  float: left;
+}
+
+.content .rightcontent ul {
+  margin-top: 25px;
+}
+
+.content .rightcontent ul li {
+  list-style-type: none;
+  color: var(--dark);
+  padding-top: 15px;
+}
+
+.content .rightcontent ul li a {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--pink);
+  word-wrap: break-word;
+}
+
+.content .rightcontent .highlight {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.content .rightcontent .highlight img {
+  width: 225px;
+  height: 225px;
+}
+
+.content .rightcontent .highlight h2 {
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+}
+
+.content .rightcontent .highlight ul.portfolio-images li {
+  display: inline-block;
+  padding: 0;
+}
+
+.content .innerblock {
+  padding: 0px 30px;
+}
+
+.link {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+}
+
+.link a {
+  display: block;
+  background-color: var(--pink);
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 7px;
+}
+
+.link a:hover {
+  background-color: var(--lighttext);
+}
+
+.expertise {
+  float: left;
+  width: 100%;
+}
+
+.expertise .col13 {
+  display: inline-block;
+  width: 25%;
+  margin: 4%;
+  color: #FFF;
+}
+
+.expertise h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 35px 0px 0px 0px;
+  color: #FFF;
+}
+
+.expertise .exwrapper {
+  padding-bottom: 75px;
+}
+
+.expertise .expert1 {
+  display: block;
+}
+
+.arrow_box_pink {
+  position: relative;
+  background: var(--pink);
+}
+
+.arrow_box_pink:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(230, 91, 83, 0);
+  border-top-color: var(--pink);
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+footer {
+  float: left;
+  clear: both;
+  padding: 50px 0px;
+  width: 100%;
+  background-color: var(--tan);
+}
+
+footer ul.cta {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+footer ul.cta li {
+  list-style-type: none;
+  color: var(--dark);
+}
+
+footer ul.cta li a {
+  color: var(--pink);
+}
   
   .login-box .user-box {
     position: relative;
